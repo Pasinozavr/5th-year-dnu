@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Matrix Multiplication Calculator</title>
+</head>
+<script src="code.js"></script>
+<link rel="stylesheet" type="text/css" href="page.css">
+<body>
+<div class='resp_code'>
+<div align='center'><h2>Multiply Matrices Online</h2></div><div class="frms" id='maindiv'>
+<div class='clear'></div>
+<form name=first>
+<div align='left' style='margin-bottom:20px;'><h3> Matrix 1 </h3><div><label>Matrix Type</label></div><select id=amat onchange=marka()>
+<option value=1>3x3</option>
+<option value=2>3x2</option>
+<option value=3>2x3</option>
+<option value=4>3x1</option>
+<option value=5>1x3</option>
+<option value=6>2x2</option>
+</select>
+</div> <div>
+<div><span><input id=a11 onkeyup=check(this)
+type='text' maxlength=10> </span><span> <input id=a12
+onkeyup=check(this)
+type='text'> </span><span> <input id=a13 onkeyup=check(this)
+type='text' maxlength=10> </span></div>
+<div><span><input id=a21
+onkeyup=check(this) type='text'> </span><span> <input id=a22 onkeyup=check(this)
+type='text' maxlength=10> </span><span> <input id=a23 onkeyup=check(this)
+type='text'> </span></div>
+<div><span><input id=a31 onkeyup=check(this)
+type='text' maxlength=10> </span><span> <input id=a32 onkeyup=check(this)
+type='text' maxlength=10> </span><span> <input id=a33 onkeyup=check(this)
+type='text' maxlength=10> </span></div></div><div><div align='left' style='margin-bottom:20px;'><h4> Matrix 2 </h4>
+<div>
+<label>Matrix Type </label></div><select id=bmat onchange=marka()>
+<option value=1>3x3</option>
+<option value=2>3x2</option>
+<option value=3>2x3</option>
+<option value=4>3x1</option>
+<option value=5>1x3</option>
+<option value=6>2x2</option></select></div>
+<div><span><input id=b11 onkeyup=check(this) type='text' maxlength=10> </span>
+<span> <input id=b12 onkeyup=check(this) type='text' maxlength=10> </span>
+<span> <input id=b13 onkeyup=check(this) type='text' maxlength=10> </span></div>
+<div><span><input id=b21 onkeyup=check(this) type='text' maxlength=10> </span>
+<span> <input id=b22 onkeyup=check(this) type='text' maxlength=10> </span><span>
+<input id=b23 onkeyup=check(this) type='text' maxlength=10> </span></div>
+<div><span><input id=b31 onkeyup=check(this)
+type='text' maxlength=10> </span><span> <input id=b32 onkeyup=check(this)
+type='text' maxlength=10> </span><span> <input id=b33 onkeyup=check(this)
+type='text' maxlength=10> </span></div></div><div align='center'>
+<input type=button value=Calculate onclick=madd()>
+<input type='reset' value=Reset><span
+align='center' style="font-size: 10px;color: #dadada;" id="dumdiv">
+<a href="https://www.hscripts.com" id="dum" style="font-size: 10px;color: #dadada;text-decoration:none;color: #dadada;">&copy;h</a></span></div>
+<div class='result'><div>
+<div><span><input id=aa11 2 type='text' readonly> </span><span> <input id=aa12 2 type='text' readonly> </span><span> <input id=aa13 2 type='text' readonly> </span></div>
+<div><span><input id=aa21 2 type='text' readonly> </span><span> <input id=aa22 2 type='text' readonly> </span><span> <input id=aa23 2 type='text' readonly> </span></div>
+<div><span><input id=aa31 2 type='text' readonly> </span><span> <input id=aa32 2 type='text' readonly> </span><span> <input id=aa33 2 type='text' readonly> </span></div></div><div>
+<div><span><input id=ba11
+type='text' readonly> </span><span> <input id=ba12
+type='text' readonly> </span><span> <input id=ba13
+type='text' readonly> </span></div>
+<div><span><input id=ba21
+type='text' readonly> </span><span> <input id=ba22
+type='text' readonly> </span><span> <input id=ba23
+type='text' readonly> </span></div>
+<div><span><input id=ba31
+type='text' readonly> </span><span> <input id=ba32
+type='text' readonly> </span><span> <input id=ba33
+type='text' readonly> </span></div></div>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
+
